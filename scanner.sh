@@ -4,8 +4,10 @@ filein=$1
 
 fileout=$2
 
+tmpfile="tmp.txt"
 
-if [[ ("$filein" == "-h") || ("$filein" == "")]]; then
+
+if [[ ("$filein" == "-h") || ("$filein" == "") || ("$fileout" == "")]]; then
 
 	echo "Type domains filename first, and space separated output filename second";
 
@@ -14,12 +16,18 @@ if [[ ("$filein" == "-h") || ("$filein" == "")]]; then
 fi
 
 
-while IFS= read line
+
+while IFS= read -r line
 	
 	do
         	
-		domain=$line
-                       
-		assetfinder -subs-only $domain | waybackurls | grep 'https' | grep 'url=\|https%3A' | grep -v 'signin\|login\|click\|embed' > $2
-                         
-	done <"$filein"
+        	assetfinder -subs-only "$line" | waybackurls | grep 'https' | grep 'url=\|https%3A' | grep -v 'signin\|login\|click\|embed\|authorize\|web.archive.org';
+
+                                 
+        done < "$filein" > "$tmpfile"
+
+
+
+sort -u "$tmpfile" > "$fileout";
+
+rm "$tmpfile"
