@@ -21,7 +21,7 @@ while IFS= read -r line
 	
 	do
         	
-        	assetfinder -subs-only "$line" | waybackurls | grep 'https' | grep 'url=\|https%3A' | grep -v 'signin\|login\|click\|embed\|authorize\|web.archive.org';
+        	assetfinder -subs-only "$line" | waybackurls | grep 'https' | grep 'url=\|https%3A\|aHR0cHM6Ly' | grep -v 'signin\|login\|click\|embed\|authorize\|web.archive.org\|counter';
 
                                  
         done < "$filein" > "$tmpfile"
