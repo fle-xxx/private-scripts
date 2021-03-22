@@ -7,7 +7,7 @@ fileout=$2
 
 
 
-if [[ ("$filein" == "-h") || ("$filein" == "")]]; then
+if [[ ("$filein" == "-h") || ("$filein" == "")] || ("$fileout" == "")]]; then
 
 	  echo "Type domains file name first, and space separated output file name second";
 
