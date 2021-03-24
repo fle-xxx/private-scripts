@@ -1,0 +1,8 @@
+metrics
+.git
+env
+.htaccess
+.htpasswd
+admin
+secure/Dashboard.jspa
++CSCOE+/logon.html
