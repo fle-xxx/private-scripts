@@ -23,11 +23,11 @@ while IFS= read -r line
 
         echo -e "Domain: $line"; echo -e "Protocol: https";
 
-        ffuf -w /root/wordlists/big.txt -u https://"$line"/FUZZ -t 80 -maxtime 2; 
+        ffuf -w /root/wordlists/big.txt -u https://"$line"/FUZZ -t 80 -maxtime 600; 
 
         echo -e 'Protocol: http'; 
 
-		    ffuf -w /root/wordlists/big.txt -u http://"$line"/FUZZ -t 80 -maxtime 2;
+		    ffuf -w /root/wordlists/big.txt -u http://"$line"/FUZZ -t 80 -maxtime 600;
 
 
     done < "$filein" > "$fileout";
