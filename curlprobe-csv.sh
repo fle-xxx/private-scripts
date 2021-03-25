@@ -10,8 +10,8 @@ fileout=$2
 
                 do 
 
-                        res1=$(curl -o /dev/null -s -w "%{http_code}\n" https://$line)
-                        res2=$(curl -o /dev/null -s -w "%{http_code}\n" http://$line)
+                        res1=$(curl -o /dev/null -s -w "%{http_code}\n" https://$line --connect-timeout 3)
+                        res2=$(curl -o /dev/null -s -w "%{http_code}\n" http://$line --connect-timeout 3)
 
                         echo -n $line; echo -n ','; echo -n $res1; echo -n ','; echo -n $res2; echo -en '\n'; 
 
