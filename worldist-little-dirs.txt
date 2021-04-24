@@ -6,3 +6,10 @@ env
 admin
 secure/Dashboard.jspa
 +CSCOE+/logon.html
+server-status
+info.php
+status
+log
+_log
+.svn
+phpmyadmin
