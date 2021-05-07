@@ -33,6 +33,7 @@ if [[ ("$page_amount" != "")]]; then
 
 		curl --silent "https://github.com/$prog_name?page=$i" | grep -oP '(?<=\" href=\"\/'$prog_name'\/).*(?=class)' | tr -d '\"' >> repos
 
+
 	done
 
         
@@ -57,3 +58,5 @@ while IFS= read line
 
 
 	done < repos | grep '\"' > gitout
+
+rm repos; 
