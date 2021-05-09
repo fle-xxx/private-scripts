@@ -7,9 +7,13 @@ admin
 secure/Dashboard.jspa
 +CSCOE+/logon.html
 server-status
-info.php
+phpinfo.php
 status
-log
 _log
 .svn
 phpmyadmin
+.travis.yml
+.ssh/id_rsa
+package.json
+Gruntfile.js
+gulpfile.js
