@@ -27,7 +27,7 @@ filein=$1 #scope domains file
 
                 do 
 
-                        assetfinder $line >> subN;
+                        assetfinder --subs-only $line >> subN;
 
 
                 done <"$filein"
