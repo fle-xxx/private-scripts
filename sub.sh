@@ -27,10 +27,15 @@ filein=$1 #scope domains file
 
                 do 
 
-                        assetfinder --subs-only $line >> subN;
+                        assetfinder $line >> subN;
 
 
                 done <"$filein"
+		
+		
 
-        
-        wc subN;
+        sort -u subN > sub;
+
+	rm subN;
+
+        wc sub;
