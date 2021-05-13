@@ -1,4 +1,4 @@
-filein=$1
+filein=$1 #scope domains file
 
 
         while IFS= read line
@@ -33,8 +33,6 @@ filein=$1
                 done <"$filein"
 
 
-	/root/scripts/./curlprobe.sh sub upzpt;
+	cat sub | httprobe -p http:8080 -p http:81 > uphosts
 
-	sed 's/........$//' upzpt > up; 
-
-	wc up;
+	wc uphosts;
