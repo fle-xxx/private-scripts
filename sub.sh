@@ -34,7 +34,7 @@ filein=$1 #scope domains file
 		
 		
 
-        sort -u subN > sub;
+        sort -u subN >> sub;
 
 	rm subN;
 
