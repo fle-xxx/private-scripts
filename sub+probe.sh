@@ -5,7 +5,7 @@ filein=$1 #scope domains file
 
                 do 
 
-                        amass enum -active -d $line >> sub;
+                        amass enum -active -d $line >> subN;
 
 
                 done <"$filein"
@@ -16,7 +16,7 @@ filein=$1 #scope domains file
 
                 do 
 
-                        amass enum -passive -d $line >> sub;
+                        amass enum -passive -d $line >> subN;
 
 
                 done <"$filein"
@@ -27,11 +27,16 @@ filein=$1 #scope domains file
 
                 do 
 
-                        assetfinder $line >> sub;
+                        assetfinder $line >> subN;
 
 
                 done <"$filein"
+		
+		
 
+        sort -u subN > sub;
+
+	rm subN;
 
 	cat sub | httprobe -p http:8080 -p http:81 > uphosts
 
