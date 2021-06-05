@@ -1,5 +1,5 @@
 metrics
-.git
+.git/config
 env
 .htaccess
 .htpasswd
