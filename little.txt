@@ -21,3 +21,4 @@ gulpfile.js
 logs
 actuator
 owa/auth/logon.aspx
+.magnolia
