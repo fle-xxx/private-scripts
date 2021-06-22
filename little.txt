@@ -25,4 +25,3 @@ owa/auth/logon.aspx
 xmlrpc.php
 config
 WEB-INF/web.xml
-
