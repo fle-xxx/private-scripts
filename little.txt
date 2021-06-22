@@ -10,7 +10,7 @@ server-status
 phpinfo.php
 status
 _log
-.svn
+.svn/entries
 phpmyadmin
 .travis.yml
 .ssh/id_rsa
@@ -22,3 +22,7 @@ logs
 actuator
 owa/auth/logon.aspx
 .magnolia
+xmlrpc.php
+config
+WEB-INF/web.xml
+
