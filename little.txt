@@ -28,3 +28,4 @@ config
 WEB-INF/web.xml
 docker-compose.yml
 composer.lock
+swagger-resources
