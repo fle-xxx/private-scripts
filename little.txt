@@ -7,6 +7,7 @@ admin
 secure/Dashboard.jspa
 +CSCOE+/logon.html
 server-status
+server-info
 phpinfo.php
 status
 _log
@@ -25,3 +26,5 @@ owa/auth/logon.aspx
 xmlrpc.php
 config
 WEB-INF/web.xml
+docker-compose.yml
+composer.lock
