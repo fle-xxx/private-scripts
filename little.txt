@@ -12,7 +12,7 @@ phpinfo.php
 status
 _log
 .svn/entries
-phpmyadmin
+/phpMyadmin/
 .travis.yml
 .ssh/id_rsa
 package.json
@@ -29,3 +29,6 @@ WEB-INF/web.xml
 docker-compose.yml
 composer.lock
 swagger-resources
+/wp-admin/install.php
+/ajax/api/content_infraction/getIndexableContent
+/register/
