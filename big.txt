@@ -1782,6 +1782,7 @@ aj
 _ajax
 ajax
 ajax_
+ajax/api/content_infraction/getIndexableContent
 ajax_calls
 ajaxchat
 ajaxcom
@@ -6171,6 +6172,7 @@ _components
 components
 compose
 composer
+composer.lock
 compra
 compra/
 comprar
@@ -7889,6 +7891,7 @@ doc-html/
 doc/internet.nsf
 doc/javapg.nsf
 dock
+docker-compose.yml
 doc/lccon.nsf
 doclib
 docman
@@ -10842,6 +10845,7 @@ girona
 gis
 .git
 git
+.git/config
 .git/HEAD
 .gitignore
 gitweb
@@ -16308,6 +16312,7 @@ maggot
 magic
 magiczoomplus
 magnifier_xml
+.magnolia
 magnum
 magpie
 magpierss
@@ -22319,6 +22324,7 @@ phpmy
 _phpmyadmin
 phpmyadmin
 phpmyadmin/
+phpMyadmin/
 phpMyAdmin
 phpMyAdmin/
 phpmyadmin2
@@ -28711,6 +28717,7 @@ sv-se
 sv_se
 sw
 sw000.asp?|-|0|404_Object_Not_Found
+swagger-resources
 swajax1
 swap
 swatches
@@ -32189,6 +32196,7 @@ wp2
 wp3
 wp-admin
 wp_admin
+wp-admin/install.php
 wp-app
 wpartner
 wp-atom
