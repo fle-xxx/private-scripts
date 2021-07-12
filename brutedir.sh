@@ -21,7 +21,7 @@ while IFS= read -r line
 
 	do
 
-		ffuf -w /root/wordlists/big.txt -u $line/FUZZ -v -ac -timeout 5 -fc 403,401 -fs 0
+		ffuf -w /root/private-scripts/big.txt -u $line/FUZZ -v -ac -timeout 5 -fc 403,401 -fs 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15
 
 
         done < "$filein" > "$fileout"; 
