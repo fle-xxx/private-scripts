@@ -5,18 +5,7 @@ filein=$1 #scope domains file
 
                 do 
 
-                        amass enum -active -d $line >> subN;
-
-
-                done <"$filein"
-
-
-
-        while IFS= read line
-
-                do 
-
-                        amass enum -passive -d $line >> subN;
+                        amass enum -active -brute -d $line >> subN;
 
 
                 done <"$filein"
