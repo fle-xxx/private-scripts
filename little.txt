@@ -30,5 +30,4 @@ docker-compose.yml
 composer.lock
 swagger-resources
 wp-admin/install.php
-ajax/api/content_infraction/getIndexableContent
 register/
