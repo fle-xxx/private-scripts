@@ -22,7 +22,6 @@ gulpfile.js
 logs
 actuator
 owa/auth/logon.aspx
-.magnolia
 xmlrpc.php
 config
 WEB-INF/web.xml
@@ -31,3 +30,4 @@ composer.lock
 swagger-resources
 wp-admin/install.php
 register/
+docs/#/
