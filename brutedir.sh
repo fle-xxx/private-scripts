@@ -29,3 +29,5 @@ while IFS= read -r line
 
 
 wc $fileout; 
+
+#brutedir.sh brutehosts outbrute, host - http://bla.com
