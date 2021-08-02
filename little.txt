@@ -31,4 +31,4 @@ swagger-resources
 wp-admin/install.php
 register/
 docs/#/
-/sidekiq/busy
+sidekiq/busy
