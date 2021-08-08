@@ -32,3 +32,4 @@ wp-admin/install.php
 register/
 docs/#/
 sidekiq/busy
+viewer/actuator
