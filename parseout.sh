@@ -1,4 +1,4 @@
-filein=$1
+filein=$1 #parses output file of brutedir.sh or outlittle
 
 
         IFS=$'\n' read -d '' -r -a lines < "$filein"
