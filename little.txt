@@ -1,3 +1,4 @@
+.idea/workspace.xml
 metrics
 .git/config
 env
