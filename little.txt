@@ -1,3 +1,4 @@
+api/docs
 .idea/workspace.xml
 metrics
 .git/config
