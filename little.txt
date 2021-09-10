@@ -29,7 +29,7 @@ config
 WEB-INF/web.xml
 docker-compose.yml
 composer.lock
-swagger-resources
+swagger.json
 wp-admin/install.php
 register/
 docs/#/
