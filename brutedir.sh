@@ -27,8 +27,10 @@ while IFS= read -r line
         done < "$filein" > tmp
 
 
-parseout.sh tmp > "$fileout"
+parseout.sh tmp > $fileout;
 
-wc $fileout
+rm tmp;
+
+wc $fileout;
 
 #brutedir.sh brutehosts outbrute, host - http://bla.com
