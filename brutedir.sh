@@ -24,10 +24,11 @@ while IFS= read -r line
 		ffuf -w /root/private-scripts/big.txt -u $line/FUZZ -v -ac -timeout 5 -fc 403,401 -fs 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
 
-        done < "$filein" > "$fileout"; 
+        done < "$filein" > tmp
 
 
+parseout.sh tmp > "$fileout"
 
-wc $fileout; 
+wc $fileout
 
 #brutedir.sh brutehosts outbrute, host - http://bla.com
