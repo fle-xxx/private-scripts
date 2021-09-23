@@ -25,7 +25,8 @@ Gruntfile.js
 gulpfile.js
 .web
 logs
-actuator/prometheus
+actuator/
+actuator
 owa/auth/logon.aspx
 xmlrpc.php
 config
