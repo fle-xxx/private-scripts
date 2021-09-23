@@ -1,6 +1,9 @@
+api/
+swagger-resources/
+swagger-ui.html
 api/docs
 .idea/workspace.xml
-metrics
+metrics/
 .git/config
 env
 .htaccess
