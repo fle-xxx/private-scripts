@@ -49,8 +49,8 @@ api/
 api/ads
 api/announcements
 api/api
-api/apidocs
 api/api-docs
+api/apidocs
 api/apidocs/swagger.json
 api/application.wadl
 api/auth
@@ -75,10 +75,10 @@ api/csp_report
 api/custom
 api/customer
 api-doc
-apidocs
 api-docs
 api/docs
 api/docs/
+apidocs
 api-docs/swagger.json
 apidocs/swagger.json
 api-docs/v1/openapi.json
@@ -169,8 +169,8 @@ api/v1/account/users/password
 api/v1/account/users/summaries
 api/v1/account/user/verify
 api/v1/analytics/events
-api/v1/apidocs
 api/v1/api-docs
+api/v1/apidocs
 api/v1/articles.json
 api/v1/asset/asset
 api/v1/asset/assets
@@ -230,8 +230,8 @@ api/v1/users/current
 api/v1/visits
 api/v2
 api/v2/accounts
-api/v2/apidocs
 api/v2/api-docs
+api/v2/apidocs
 api/v2/auth
 api/v2/bid
 api/v2/collector
@@ -268,6 +268,7 @@ api/widgets/events
 application.wadl
 auditevents
 autoconfig
+autodiscover/autodiscover.json?@test.com/mapi/nspi/?&Email=autodiscover/autodiscover.json%3F@test.com
 beans
 cloudfoundryapplication
 composer.lock
@@ -403,4 +404,3 @@ viewer/actuator
 WEB-INF/web.xml
 wp-admin/install.php
 xmlrpc.php
-autodiscover/autodiscover.json?@test.com/mapi/nspi/?&Email=autodiscover/autodiscover.json%3F@test.com
