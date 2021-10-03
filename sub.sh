@@ -27,4 +27,6 @@ filein=$1 #scope domains file
 
 	rm subN;
 
+	cat scope >> sub; sort -u -o sub;
+
         wc sub;
