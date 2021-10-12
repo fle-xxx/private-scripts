@@ -1,3 +1,4 @@
+CTCWebService/CTCWebServiceBean/ConfigServlet
 api/
 swagger-resources/
 swagger-ui.html
