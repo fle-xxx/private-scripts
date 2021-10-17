@@ -7,7 +7,6 @@ api/docs
 metrics/
 .git/config
 env
-.htaccess
 .htpasswd
 admin
 secure/Dashboard.jspa
@@ -35,8 +34,6 @@ WEB-INF/web.xml
 docker-compose.yml
 composer.lock
 swagger.json
-wp-admin/install.php
-register/
 docs/#/
 sidekiq/busy
 viewer/actuator
