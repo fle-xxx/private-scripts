@@ -1,4 +1,6 @@
 CTCWebService/CTCWebServiceBean/ConfigServlet
+swaggerapi
+healthz
 api/
 swagger-resources/
 swagger-ui.html
