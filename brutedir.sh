@@ -27,9 +27,12 @@ while IFS= read -r line
         done < "$filein" > tmp
 
 
-parseout.sh tmp > $fileout;
+parseout.sh tmp > tmp1;
 
-rm tmp;
+parseout.sh tmp1 > $fileout;
+
+
+rm tmp; rm tmp1;
 
 wc $fileout;
 
