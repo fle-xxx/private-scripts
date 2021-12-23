@@ -10,6 +10,7 @@ filein=$1 #cidr scope file
 
                 done <"$filein"
 
+	sort -u -o cidr cidr;
 
 	wc cidr;
 
