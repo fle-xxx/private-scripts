@@ -4,17 +4,13 @@
 url=$1
 
 
+	if [[ ("$url" == "-h") || ("$url" == "") ]]; then
 
+		echo "Type site or js file url";
 
+		exit 1;
 
-if [[ ("$url" == "-h") || ("$url" == "") ]]; then
-
-	echo "Type site or js file url";
-
-	exit 1;
-
-fi
-
+	fi
 
 
 
