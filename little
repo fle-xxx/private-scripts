@@ -11,6 +11,7 @@ CTCWebService/CTCWebServiceBean/ConfigServlet
 docker-compose.yml
 docs/#/
 env
+debug/pprof/
 .git/config
 Gruntfile.js
 gulpfile.js
