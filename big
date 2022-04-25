@@ -5190,7 +5190,6 @@ autotopup
 autotopup_old
 autoupdate
 autoupdate/
-tmui/login.jsp/..;/tmui/locallb/workspace/fileRead.jsp?fileName=/etc/passwd
 autoviewer_pro
 autres
 aux
@@ -11148,6 +11147,7 @@ conf/koi-utf
 conf/koi-win
 conflg.php
 conf/logging.properties
+confluence
 confluence/
 confluence/admin
 confluence/pages/listpermissionpages.action
@@ -20033,6 +20033,7 @@ gradle-app.setting
 graduate
 graduation
 graf
+grafana
 grafana/
 grafica
 graficos
@@ -50059,6 +50060,7 @@ tmp/whmcs.php
 tmp/xd.php
 tms
 TMT
+tmui/login.jsp/..;/tmui/locallb/workspace/fileRead.jsp?fileName=/etc/passwd
 .tmux.conf
 tn
 tncms
