@@ -285,6 +285,8 @@ docs/#/
 dump
 env
 features
+files
+files/
 flyway
 .git/config
 grafana
