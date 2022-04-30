@@ -19,7 +19,7 @@ grep -r -h -Eo '[^/"]+' $filein | grep -v 'http' >> $filesub;
 
                         addr=$(nslookup $line | grep 'Address' | grep -v '#' | sed 's/^.........//')
 
-                        #echo -n $line; echo -n ','; 
+                        echo -n $line; echo -n ','; 
 			echo -n $addr; echo -en '\n'; 
 
 
