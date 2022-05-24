@@ -5335,16 +5335,12 @@ bea_wls_internal/HTTPClntClose
 bea_wls_internal/HTTPClntClose/*
 bea_wls_internal/HTTPClntLogin
 bea_wls_internal/HTTPClntLogin/*
-#bea_wls_internal/HTTPClntRecv
-#bea_wls_internal/HTTPClntRecv/*
 bea_wls_internal/HTTPClntSend
 bea_wls_internal/HTTPClntSend/*
 bea_wls_internal/iiop/ClientClose
 bea_wls_internal/iiop/ClientClose/*
 bea_wls_internal/iiop/ClientLogin
 bea_wls_internal/iiop/ClientLogin/*
-#bea_wls_internal/iiop/ClientRecv
-#bea_wls_internal/iiop/ClientRecv/*
 bea_wls_internal/iiop/ClientSend
 bea_wls_internal/iiop/ClientSend/*
 bea_wls_internal/psquare/x.jsp
@@ -6645,7 +6641,6 @@ cache_page
 cache_public
 caches
 caches/
-#CacheServer
 cache/sql_error_latest.cgi
 cache-stats/
 caching
@@ -10775,7 +10770,6 @@ CSample
 _cs_apps
 cs/BlobServer
 csc
-#cs/CacheServer
 cs/CatalogManager
 cscockpit/
 +CSCOE+/logon.html
@@ -20227,7 +20221,6 @@ HTTPClntClose
 HTTPClntClose/*
 HTTPClntLogin
 HTTPClntLogin/*
-#HTTPClntRecv
 HTTPClntRecv/*
 HTTPClntSend
 HTTPClntSend/*
