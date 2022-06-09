@@ -10030,6 +10030,7 @@ contact_us.php
 contador
 contadores
 container
+containerLogs
 containerpicker.aspx
 containers
 Containers
@@ -38185,6 +38186,7 @@ run/build_info.jsp
 RunGlobalePlot
 runner
 running
+runningpods/
 RunProgram
 runqianprovider/providers/
 runreport.aspx
@@ -45442,6 +45444,7 @@ tmp/whmcs.php
 tmp/xd.php
 tms
 TMT
+tmui/login.jsp/..;/tmui/locallb/workspace/fileRead.jsp?fileName=/etc/passwd
 .tmux.conf
 tn
 tncms

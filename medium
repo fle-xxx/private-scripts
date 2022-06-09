@@ -150,6 +150,7 @@ api/user/current
 api/user/me
 api/users/current
 api/users/login
+api/v1
 api/v1/
 api/v1/account/accounts
 api/v1/account/accounts/summaries
@@ -275,6 +276,7 @@ composer.lock
 config
 configprops
 confluence
+containerLogs
 +CSCOE+/logon.html
 CTCWebService/CTCWebServiceBean/ConfigServlet
 debug/pprof/
@@ -316,7 +318,9 @@ owa/auth/logon.aspx
 package.json
 phpinfo.php
 phpMyadmin/
+pods
 register/
+runningpods/
 secure/Dashboard.jspa
 server-info
 server-status
