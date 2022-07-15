@@ -1,17 +1,18 @@
-#!/bin/bash
+url=$1;
+
+host=$(echo "$url" | sed -e 's|^[^/]*//||' -e 's|/.*$||');
 
 
-url=$1
+GoLinkFinder -d $host | grep -v -e 'multipart\/\|UTC\|Pacific\|Australia\|Asia\|MM\|DD\|YY\|application\/\|Africa\|America\|GMT\|Europe\|text\/css\|image\/jpeg\|favicon\.ico\|^\.\|w3\.org\|^$\|\.png\|\.jpg\|googletagmanager\|google-analytics\|facebook\|instagram\|google\.com\|apple\.com\|\.css\|appgallery\|gtm\|woff\|image\/png\|text\/javascript\|\.svg\|speedcurve' >> jsout_$host;
 
 
-	if [[ ("$url" == "-h") || ("$url" == "") ]]; then
-
-		echo "Type site or js file url";
-
-		exit 1;
-
-	fi
+cat jsout_$host | grep -v '\.js';
 
 
+cat jsout_$host | grep 'http.*\.js' | grep -v '\.json' >> jsurls_$host;
 
-python3 /root/tools/LinkFinder/linkfinder.py -i $url -d -o cli | grep -v -e 'multipart\/\|UTC\|Pacific\|Australia\|Asia\|MM\|DD\|YY\|application\/\|Africa\|America\|GMT\|Europe\|text\/css\|image\/jpeg\|favicon\.ico\|\.js\|^\.\|w3\.org\|^$\|\.png\|\.jpg\|googletagmanager\|google-analytics\|facebook\|instagram\|google\.com\|apple\.com\|\.css\|appgallery\|\.gtm\.js'
+
+cat jsurls_$host | xargs -I@ zsh -c "echo -e '\n[URL]: @\n'; GoLinkFinder -d @ | grep -v -e 'multipart\/\|UTC\|Pacific\|Australia\|Asia\|MM\|DD\|YY\|application\/\|Africa\|America\|GMT\|Europe\|text\/css\|image\/jpeg\|favicon\.ico\|^\.\|w3\.org\|^$\|\.png\|\.jpg\|googletagmanager\|google-analytics\|facebook\|instagram\|google\.com\|apple\.com\|\.css\|appgallery\|gtm\|woff\|image\/png\|text\/javascript\|\.svg\|speedcurve'"
+
+
+rm jsurls_$host; rm jsout_$host;
