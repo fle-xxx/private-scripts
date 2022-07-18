@@ -28,7 +28,7 @@ while IFS= read -r line
         done < "$filein" > "$tmpfile"
 
 
-cat "$tmpfile" | /root/tools/urldedupe/./urldedupe -s > "$fileout"; #path to urldedupe tool
+cat "$tmpfile" | ~/tools/urldedupe/./urldedupe -s > "$fileout"; #path to urldedupe tool
 
 rm "$tmpfile";
 
