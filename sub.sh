@@ -5,7 +5,8 @@ filein=$1 #scope domains file
 
          do 
 
-         	amass enum -active -brute -d $line >> subN;
+         	#amass enum -active -brute -d $line >> subN;
+		echo $line | subfinder -silent >> sub
 
 
          done <"$filein"
@@ -22,14 +23,14 @@ filein=$1 #scope domains file
         done <"$filein"
 
 
-	#while IFS= read line
+	while IFS= read line
 
-        #do
+        do
 
-		#curl -fsSL -path-as-is "https://crt.sh/?CN=%25.""{$line}" | grep $line | sort -n | uniq -c | sort -r | column -t | grep -v '\*\|\#' | sed 's/^....//' | sed 's/[[:space:]]*$//' | grep '<TD>' | grep -oE '[[:alnum:]]+[.][[:alnum:]_.-]+' | grep $line >> subN;
+		curl -fsSL -path-as-is "https://crt.sh/?CN=%25.""{$line}" | grep $line | sort -n | uniq -c | sort -r | column -t | grep -v '\*\|\#' | sed 's/^....//' | sed 's/[[:space:]]*$//' | grep '<TD>' | grep -oE '[[:alnum:]]+[.][[:alnum:]_.-]+' | grep $line >> subN;
 		
 		
-	#done <"$filein"
+	done <"$filein"
 
 
         sort -u subN >> sub;
